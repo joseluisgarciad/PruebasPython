@@ -25,6 +25,7 @@ def addatupla(tupla: tuple, num):
 
 addalistas([1, 2, 3, 4, 5, 6, 7, 8, 9])
 tupla = (23, 34, 65, 23, 44)
+print(tupla)
 print(addatupla(tupla, input("Dame el valor para añadir a Tupla:")))
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
