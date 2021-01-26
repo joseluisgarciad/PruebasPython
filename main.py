@@ -14,18 +14,24 @@ def addalistas(lista: list):
         print(listavacia[i])
 
 
-def addatupla(tupla: tuple, num):
-    listemp = list(tupla)
+def addatupla(tup: tuple, num):
+    listemp = list(tup)
 
     listemp.append(num)
 
-    tupla = tuple(listemp)
-    return tupla
+    tup = tuple(listemp)
+    return tup
 
 
-addalistas([1, 2, 3, 4, 5, 6, 7, 8, 9])
+def addadiccionario(dicc: dict, clave, valor):
+    dicc[clave] = valor
+    return clave, valor
+
+
+diccionario = {"España": "Madrid", "Japon": "Tokio"}
 tupla = (23, 34, 65, 23, 44)
-print(tupla)
+addalistas([1, 2, 3, 4, 5, 6, 7, 8, 9])
 print(addatupla(tupla, input("Dame el valor para añadir a Tupla:")))
-
+print(addadiccionario(diccionario, input("Dame el valor para la clave:"), input("Dame el valor para el valor:")))
+print(diccionario)
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
